@@ -1,0 +1,71 @@
+{
+	"x-enabled": {
+		"enabled": true
+	},
+	"swagger": "2.0",
+	"info": {
+		"description": "Test service that echos back requests.",
+		"version": "1.0.0",
+		"title": "Echo Service"
+	},
+	"paths": {
+		"/echo": {
+			"get": {
+				"x-flow": "EchoFlow",
+				"description": "",
+				"operationId": "GetEcho",
+				"parameters": [],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "echo"
+					}
+				}
+			},
+			"post": {
+				"x-flow": "EchoFlow",
+				"description": "",
+				"operationId": "CreateEcho",
+				"parameters": [],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "echo"
+					}
+				}
+			},
+			"put": {
+				"x-flow": "EchoFlow",
+				"description": "",
+				"operationId": "UpdateEcho",
+				"parameters": [],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "echo"
+					}
+				}
+			},
+			"delete": {
+				"x-flow": "EchoFlow",
+				"description": "",
+				"operationId": "DeleteEcho",
+				"parameters": [],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "echo"
+					}
+				}
+			}
+		}
+	}
+}
